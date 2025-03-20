@@ -1,5 +1,20 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/Sections/Nav";
+import { Plus_Jakarta_Sans } from 'next/font/google';
+import { Poppins } from "next/font/google";
+
+const jakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'], // add the weights you need
+  variable: '--font-jakarta',
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"], // Add required weights
+  variable: "--font-poppins", // Define a CSS variable
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +33,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Nav />
         {children}
       </body>
     </html>

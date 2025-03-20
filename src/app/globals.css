@@ -21,6 +21,7 @@
 
 body {
   background: var(--background);
+  background-color: #22282C;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
