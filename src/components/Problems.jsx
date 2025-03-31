@@ -12,11 +12,11 @@ const problems = [
 ];
 
 const ProblemCard = ({ problem }) => (
-  <div className="bg-black p-4 rounded-lg shadow-lg">
-    <div className="flex items-center gap-2 text-xl font-semibold">
+  <div className="bg-white p-4 rounded-lg shadow-lg">
+    <div className="flex text-black items-center gap-2 text-xl font-semibold">
       {problem.icon} {problem.name}
     </div>
-    <p className="mt-2 text-gray-300">{problem.description}</p>
+    <p className="mt-2 text-black">{problem.description}</p>
     <div className="mt-4 flex justify-between text-sm text-gray-400">
       <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">{problem.problems} Problems</button>
       <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Beginner level</button>
@@ -45,9 +45,8 @@ export default function PracticeProblems() {
         {problems.map((problem, index) => (
           <ProblemCard key={index} problem={problem} />
         ))}
-      </div>
-      
-      <button className="bg-black text-white font-medium px-4 py-2 rounded border-2 border-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300">+ More Languages</button>
+      </div><br />
+      <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">+ More Languages</button>
     </div>
   );
 }
