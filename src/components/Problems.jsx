@@ -18,8 +18,8 @@ const ProblemCard = ({ problem }) => (
     </div>
     <p className="mt-2 text-gray-300">{problem.description}</p>
     <div className="mt-4 flex justify-between text-sm text-gray-400">
-      <button className="bg-white text-black px-5 py-2 rounded hover:bg-indigo-100 hover:scale-105">{problem.problems} Problems</button>
-      <button className="bg-white text-black px-3 py-1 rounded hover:bg-indigo-100 hover:scale-105">Beginner level</button>
+      <button className="bg-white text-black px-5 py-2 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">{problem.problems} Problems</button>
+      <button className="bg-white text-black px-3 py-1 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Beginner level</button>
     </div>
   </div>
 );
