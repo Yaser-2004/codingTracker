@@ -18,8 +18,8 @@ const ProblemCard = ({ problem }) => (
     </div>
     <p className="mt-2 text-gray-300">{problem.description}</p>
     <div className="mt-4 flex justify-between text-sm text-gray-400">
-      <button className="bg-white text-black px-5 py-2 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">{problem.problems} Problems</button>
-      <button className="bg-white text-black px-3 py-1 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Beginner level</button>
+      <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">{problem.problems} Problems</button>
+      <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Beginner level</button>
     </div>
   </div>
 );
@@ -47,9 +47,7 @@ export default function PracticeProblems() {
         ))}
       </div>
       
-      <button className="bg-transparent text-white font-medium px-4 py-2 rounded border-2 border-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300">+ More Languages</button>
+      <button className="bg-black text-white font-medium px-4 py-2 rounded border-2 border-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300">+ More Languages</button>
     </div>
   );
 }
-
-
