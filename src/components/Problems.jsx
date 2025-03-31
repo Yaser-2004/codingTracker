@@ -4,8 +4,8 @@ import { SiCplusplus, SiHtml5 } from "react-icons/si";
 
 const problems = [
   { name: "Java", icon: <FaJava />, description: "Solve Java Practice Problems and master various data structures.", problems: 576 },
-  { name: "C++", icon: <SiCplusplus />, description: "Solve C++ Practice Problems and master data structures.", problems: 576 },
-  { name: "Python", icon: <FaPython />, description: "Solve Python Practice Problems and master this language.", problems: 576 },
+  { name: "C++", icon: <SiCplusplus />, description: "Solve C++ Practice Problems and master data structures on your desired platform.", problems: 576 },
+  { name: "Python", icon: <FaPython />, description: "Solve Python Practice Problems and master this language on your desired platform.", problems: 576 },
   { name: "JavaScript", icon: <FaJs />, description: "Solve JavaScript Practice Problems and master this language.", problems: 576 },
   { name: "HTML/CSS", icon: <SiHtml5 />, description: "Solve HTML/CSS Practice Problems and master website layout.", problems: 576 },
   { name: "SQL Queries", icon: <FaDatabase />, description: "Solve SQL Queries and learn database storage & processing.", problems: 576 }
