@@ -20,9 +20,9 @@ export default function Nav() {
             <Link href="#" className="px-3 py-2 text-sm font-medium text-[#EBEFFF]">Product</Link>
             <Link href="#" className="px-3 py-2 text-sm font-medium text-[#EBEFFF]">Services</Link>
             <Link href="#" className="px-3 py-2 text-sm font-medium text-[#EBEFFF]">Contact</Link>
-            <button className="ml-4 inline-flex items-center justify-center px-10 py-3 text-sm font-medium rounded-full text-black bg-[#EBEFFF] hover:scale-105 transition-all duration-200">
+            <Link href={'/login'} className="ml-4 inline-flex items-center justify-center px-10 py-3 text-sm font-medium rounded-full text-black bg-[#EBEFFF] hover:scale-105 transition-all duration-200">
               Sign Up
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 bg-[#F3F6FF]">
         <div className="w-full max-w-md mx-auto text-center space-y-6">
         <div className="rounded-md bg-white p-6 border border-gray-200">

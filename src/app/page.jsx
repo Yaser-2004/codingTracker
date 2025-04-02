@@ -1,7 +1,7 @@
 import Hero from "@/Sections/Hero";
-import PracticeProblems from "@/components/Problems";
-import WhyChooseUs from "@/components/chooseUs";
-import Test from "@/components/testimonilas";
+import PracticeProblems from "@/Sections/Problems";
+import WhyChooseUs from "@/Sections/chooseUs";
+import Test from "@/Sections/testimonials";
 // colors
 // text-[#EBEFFF]
 // bg-[#22282C]
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <PracticeProblems/>
       <WhyChooseUs/>
-       <Test/>
+      <Test/>
     </>
   );
 }

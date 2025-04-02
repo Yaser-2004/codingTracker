@@ -1,3 +1,4 @@
+import { ProblemCard } from "@/Components/ProblemCard";
 import React from "react";
 import { FaJava, FaPython, FaJs, FaDatabase } from "react-icons/fa";
 import { SiCplusplus, SiHtml5 } from "react-icons/si";
@@ -11,22 +12,9 @@ const problems = [
   { name: "SQL Queries", icon: <FaDatabase />, description: "Solve SQL Queries and learn database storage & processing.", problems: 576 }
 ];
 
-const ProblemCard = ({ problem }) => (
-  <div className="bg-white p-4 rounded-lg shadow-lg">
-    <div className="flex text-black items-center gap-2 text-xl font-semibold">
-      {problem.icon} {problem.name}
-    </div>
-    <p className="mt-2 text-black">{problem.description}</p>
-    <div className="mt-4 flex justify-between text-sm text-gray-400">
-      <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">{problem.problems} Problems</button>
-      <button className="bg-white text-black font-medium px-8 py-3 rounded hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Beginner level</button>
-    </div>
-  </div>
-);
-
 export default function PracticeProblems() {
   return (
-    <div className="min-h-screen bg-#22282C text-white p-8 flex flex-col items-center">
+    <div className="min-h-screen max-w-[1450px] mx-auto bg-#22282C text-white p-8 flex flex-col items-center">
       <h1 className="text-4xl font-bold text-center md:text-5xl lg:text-6xl font-bold max-w-6xl text-[#EBEFFF] mb-10">Sharpen your skills with practice problems and level up!</h1>
       <p className="mt-4 text-lg text-center max-w-2xl">
         Practice major problems in coding languages like Python, Java, JavaScript, C++, SQL, and HTML.
@@ -34,10 +22,10 @@ export default function PracticeProblems() {
       </p>
       
       <div className="mt-10 w-full flex justify-between items-center">
-        <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Practice Problems</button>
+        <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md hidden">Practice Problems</button>
         <div className="flex gap-4">
-          <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Recently faced Problems</button>
-          <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md">Starred Problems</button>
+          <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md hidden">Recently faced Problems</button>
+          <button className="bg-white text-black font-medium px-8 py-3 rounded-full hover:bg-indigo-100 hover:scale-105 transition-all duration-300 shadow-md hidden">Starred Problems</button>
         </div>
       </div>
       
