@@ -9,7 +9,7 @@ import RecommendedResources from '../components/recomResources';
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen bg-black text-white p-6 space-y-8">
+    <div className="min-h-screen bg-[#0f0f0f] text-white p-6 space-y-8">
       {/* Top Header Section */}
       <div className="space-y-2 mb-6">
         <h1 className="text-4xl font-bold">Coding Progress Tracker</h1>
