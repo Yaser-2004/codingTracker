@@ -3,6 +3,7 @@ import PracticeProblems from "@/Sections/Problems";
 import WhyChooseUs from "@/Sections/chooseUs";
 import Test from "@/Sections/testimonials";
 import DashboardPage from "./dash";
+import OverviewPage from "@/Sections/ov";
 // colors
 // text-[#EBEFFF]
 // bg-[#22282C]
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyChooseUs/>
       <Test/>
        <DashboardPage/>
+      <OverviewPage/>
     </>
   );
 }
