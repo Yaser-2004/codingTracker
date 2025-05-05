@@ -1,7 +1,18 @@
-import Link from "next/link"
-import Image from "next/image"
+'use client';
+
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useCallback } from "react";
 
 export default function LoginPage() {
+  const router = useRouter();
+
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    router.push("/ov");
+  }, [router]);
+
   return (
     <div className="flex flex-col">
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 bg-[#F3F6FF] text-gray-800">
@@ -13,7 +24,7 @@ export default function LoginPage() {
             </div>
 
             <div className="bg-white p-6 rounded-md shadow-sm border mb-10">
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2 flex flex-col gap-2">
                   <label htmlFor="email" className="text-sm text-gray-800 flex">
                     Email
@@ -37,7 +48,7 @@ export default function LoginPage() {
                     Forgot Password?
                   </Link>
                 </div>
-                <button className="w-full rounded-lg text-white bg-zinc-800 py-2 hover:bg-zinc-700">
+                <button className="w-full rounded-lg text-white bg-zinc-800 py-2 hover:bg-zinc-700" type="submit">
                   Login
                 </button>
               </form>
