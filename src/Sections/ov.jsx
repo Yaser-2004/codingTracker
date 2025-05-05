@@ -4,6 +4,8 @@ import Overview from '../components/overview';
 import Notes from '@/Components/notes';
 import PlatformStats from '@/Components/platformstats';
 import AiTips from '@/Components/AiTips';
+import RecentSubmissions from '@/Components/recSub';
+
 export default function OverviewPage() { 
     return ( <div className="min-h-screen bg-[#0f0f0f] text-white px-6 py-6"> 
     <div className="flex justify-between items-center mb-6">
@@ -58,7 +60,7 @@ export default function OverviewPage() {
         </section>
   </div>
   </div>
-
+<RecentSubmissions/>
 </div>
 
 ); }
